@@ -1,17 +1,24 @@
-[
-  {
-    "modid": "snad",
-    "name": "Snad",
-    "version": "${version}",
-    "mcversion": "${mc_version}",
-    "description": "You're finally able to have your sugarcane grow faster. What could possibly be better than that?",
-    "credits": "",
-    "url": "www.robrit.com",
-    "updateUrl": "",
-    "authorList": ["TheRoBrit"],
-    "logoFile": "",
-    "screenshots": [],
-    "parent":"",
-    "dependencies": ["mod_MinecraftForge"]
-  }
-]
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "You're finally able to have your sugarcane grow faster. What could possibly be better than that?",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/MrFuzzihead/Snad-Legacy",
+		"updateUrl": "https://github.com/MrFuzzihead/Snad-Legacy/releases/latest",
+		"authorList": [
+		  "TheRoBrit",
+		  "MrFuzzihead"
+		],
+		"credits": "TheRoBrit for the original mod",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": false
+	}]
+}
