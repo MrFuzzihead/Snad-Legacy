@@ -56,7 +56,7 @@ public class BlockSnad extends BlockSand {
             // modded subclasses of BlockReed / BlockCactus are accelerated too.
             final boolean isReedKind = blockAbove instanceof BlockReed;
 
-            for (int height = 0; ; height++) {
+            for (int height = 0;; height++) {
                 if (!world.blockExists(x, y + 1 + height, z)) {
                     break;
                 }
@@ -74,7 +74,7 @@ public class BlockSnad extends BlockSand {
             }
         } else if (blockAbove instanceof IPlantable) {
             // For other IPlantables (crops, stems, mod plants) call one extra
-            // updateTick.  The plant's own updateTick handles conditions.
+            // updateTick. The plant's own updateTick handles conditions.
             blockAbove.updateTick(world, x, y + 1, z, rand);
         }
     }
@@ -82,9 +82,9 @@ public class BlockSnad extends BlockSand {
     @Override
     public boolean canSustainPlant(IBlockAccess world, int x, int y, int z, ForgeDirection direction,
         IPlantable plantable) {
-        // Accept any plant type.  The plant's own canBlockStay / placement checks
+        // Accept any plant type. The plant's own canBlockStay / placement checks
         // handle soil-specific validity (e.g. adjacent water for reeds, farmland for
-        // crops, solid block for cave plants).  This broad acceptance is what gives
+        // crops, solid block for cave plants). This broad acceptance is what gives
         // Snad compatibility with mods that add new plant types.
         return true;
     }
